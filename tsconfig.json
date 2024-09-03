@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                        // Mục tiêu biên dịch là ES6
+    "module": "CommonJS",                   // Sử dụng CommonJS cho Node.js
+    "outDir": "./dist",                     // Thư mục xuất các file đã biên dịch
+    "rootDir": "./src",                     // Thư mục chứa mã nguồn TypeScript
+    "strict": true,                         // Kích hoạt chế độ strict
+    "esModuleInterop": true,                // Hỗ trợ import/export ES module
+    "skipLibCheck": true,                   // Bỏ qua kiểm tra các file .d.ts
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+  },
+  "include": ["src/**/*.ts"],                       // Thư mục chứa các file TypeScript
+  "exclude": ["node_modules"]
+}
